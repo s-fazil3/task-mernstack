@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            background-color: rgba(2, 2, 107, 0.574);
+            font-family: fantasy;
+            font-size: x-large;
+        }
+        header {
+            font-family: fantasy;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #111;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .project {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project h2 {
+            margin-top: 10px;
+        }
+        .project p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#all">All</a>
+        <a href="#webdesign">Web Design</a>
+        <a href="#graphics">Graphics</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <div class="project" id="webdesign">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <h2>Web Design Project</h2>
+            <p>This project showcases a modern web design with responsive layouts and interactive elements.</p>
+        </div>
+        <div class="project" id="graphics">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <h2>Graphic Design Project</h2>
+            <p>A collection of graphic design works including logos, brochures, and digital illustrations.</p>
+        </div>
+        <div class="project" id="photography">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3">
+            <h2>Photography Portfolio</h2>
+            <p>A selection of stunning photographs capturing various subjects and themes.</p>
+        </div>
+        <div class="project" id="webdesign">
+            <img src="https://via.placeholder.com/300x200" alt="Project 4">
+            <h2>Another Web Design</h2>
+            <p>Exploring different web design trends and techniques to create a user-friendly experience.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
