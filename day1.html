@@ -60,7 +60,7 @@
 
 <body>
     <div class="container">
-        <h1 style="color: #030303;">Student Registration</h1>
+        <h1 style="color: #030303;">Job Application Form</h1>
         <form action="/submit_registration" method="post">
             <div class="form-group">
                 <label for="name">Full Name</label>
@@ -80,7 +80,7 @@
             <div class="form-group">
                 <label for="dob">Date of Birth</label>
                 <input type="date" id="dob" name="dob" required>
-            </div>
+
 
             <div class="form-group">
                 <label for="gender">Gender</label>
@@ -91,7 +91,21 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-
+            <div class="form-group">
+            <label>Language:</label><input type="checkbox" name="language" value="C">C
+            <input type="checkbox" name="language" value="C++">C++
+            <input type="checkbox"  name="language" value="Java">Java </br><br>
+            </div>
+            <div class="form-group">
+            <label>Department:</label><select name="dept">
+                <option name="dept" value="Ece">Ece</option>option>
+                <option name="dept" value="Cse">Cse</option>option>
+                <option name="dept" value="Eee">Eee</option>option>
+            </select></br><br>
+            </div>
+            <div class="form-group">
+            <label>Upload Resume:</label><input type="file"></br><br>
+            </div>
             <div class="form-group">
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address" placeholder="Enter your address" required>
