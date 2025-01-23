@@ -1,0 +1,214 @@
+/* Base App Styles */
+.app {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  background-size: 130% 130%;
+  animation: backgroundAnimation 6s infinite alternate;
+  background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/1e/a8/e01ea8e5-8179-1fc6-576f-ff85dda12a87/AppIcon-0-0-1x_U007epad-0-0-0-85-220.png/1200x630wa.png");
+}
+
+/* Search Bar with Clear Button */
+.search-bar-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 12px 40px 12px 15px; /* Space for clear button */
+  font-size: 18px;
+  margin: 10px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background: #f8f8f8;
+  font-style: oblique;
+  font-family: 'Roboto', sans-serif;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 15px rgba(33, 136, 56, 0.7);
+  transform: scale(1.1);
+  outline: none;
+  background-color: #e9ffe9;
+}
+
+.clear-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.clear-button:hover {
+  background: #c0392b;
+  transform: scale(1.2);
+}
+
+/* Product List Styles */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; /* Space between items */
+  padding: 0;
+  margin: 20px auto;
+  list-style: none;
+  max-width: 1200px; /* Center the list and restrict width */
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-style: oblique;
+  background-color: #f0f8ffa7;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.5s ease, transform 0.3s;
+}
+
+.add-button:hover {
+  background: linear-gradient(90deg, #ff6a6a, #ff8566);
+  transform: scale(1.1);
+}
+
+/* Cart Page Styles */
+.cart-page {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(135deg, #89f6fea8 0%, #66a6ffa5 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.cart-item {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.remove-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.remove-button:hover {
+  background: linear-gradient(90deg, #c0392b, #e74c3c);
+  transform: scale(1.1);
+}
+
+/* Cart Link Button */
+.cart-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(90deg, #1d35577e, #457b9d);
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.5s ease, transform 0.3s;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.cart-link:hover {
+  background: linear-gradient(90deg, #457b9d, #1d3557);
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
