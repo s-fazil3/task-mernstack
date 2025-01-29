@@ -13,7 +13,7 @@ const products = [
   { id: 8, name: 'Bicycle', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9YWJMhUJmquJuYjIh_-63hdNIJ-VZO1jwg&s' },
   { id: 9, name: 'Toys', image: 'https://www.investopedia.com/thmb/Zhx9YF_jgQGOAB6UH0G-Ldo3Tyo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-465830317-72a07789a32346fea9e7a03b136d0060-f0f6c5eb79a8488594a827a5dbc4d404-ee5cf1a13bf5410caf16dbe25a019d7f.jpg' },
   { id: 10, name: 'Shoes', image: 'https://www.health.com/thmb/v2AJTIOKuEByYQhB7LvNTv5SUHs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hlt-tier-3-primary-best-running-shoes-plantar-fasciitis-ahuang-034-e93bbe47a34840b79d438ea67effe34c.jpeg' },
-  
+
 ];
 
 const App = () => {
